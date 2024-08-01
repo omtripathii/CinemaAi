@@ -1,4 +1,4 @@
-# Netflix GPT
+# Cinema AI
 
 Movies recomandation with AI.
 
