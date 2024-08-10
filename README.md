@@ -1,114 +1,87 @@
+ 
+
+
 # Cinema AI
 
 Movies recomandation with AI.
 
-## Setup
+CinemaAi clone with Netflix like UI and functionalities built using React.js and Firebase
 
-- Install react app using create-react-app (CRA)
+<br/>
+<img align="center" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" height="100" alt="" />
+<br/>
 
-```js
-npx create-react-app netflix-gpt
-```
+## Demo
 
-- Create `.env` file and put configure
+[LIVE](https://65020ffe10f85c416ff66978--jovial-starlight-e1d4ae.netlify.app/)
 
-```js
-REACT_APP_BASE_URL = YOUR_APPLICATION_BASE_URL; // http://localhost:300
-REACT_APP_OPENAI_KEY = YOUR_API_KEY_WILL_HERE;
-REACT_APP_TMDB_KEY = YOUR_API_KEY_WILL_HERE;
-```
 
-- Install and init tailwind css
+## Screenshots
 
-```js
-npm install -D tailwindcss
-npx tailwindcss init
-```
 
-- Configure tailwind css in your project
+![App Screenshot](https://user-images.githubusercontent.com/69719134/169709347-079f11e7-1938-4a5e-9f29-c4f998e6fd49.gif)
 
-  `npx tailwindcss init` command will create a file `tailwind.config.js` in your project's root directory.
-  Open `tailwind.config.js` and replace all content with below code.
 
-```js
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
-```
-
-- Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
-
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-- Now you created a react app with tailwind css successfully. Now run the below command on your terminal to start your local development server.
-
-```js
-npm start
-```
-
+  
 ## Features
 
-- Home Page (is user !authorised)
+- Progressive Web App (PWA)
+- Fully responsive and mobile friendly
+- State management using Context API
+- User authentication + sign in with Google
+- UI almost similar to Netflix
+- User can view movie/series info and trailer if available
+- User can search for movies/series
 
-  - Signin/Signup Page
-    - SignInForm / SignUpForm
 
-- Browse Page
 
-  - Navbar
-  - Showcase
-  - Trendings
-  - MoviesSuggestion
-    - MoviesList \* N
+## Run Locally
 
-- NetflixGPT
-  - Search
-  - MoviesSuggestion
+Clone the project
 
-## Screen Shot
+```bash
+  git clone https://github.com/Vivekiiitbbsr/StreamFlix
+```
 
-Live Demo : [Live Demo](https://okneeraj.github.io/netflix-gpt "Live Demo")
+Go to the project directory
 
-## Screen Shot
+```bash
+  cd StreamFlix
+```
 
-- Landing Page
+Install dependencies
 
-  ![Landing Page](https://okneeraj.github.io/netflix-gpt/screenshot/01-Landing.png)
+```bash
+  npm install
+```
 
-- Signin Page
+Create a **.env** file inside project directory with fields given below.
 
-  ![Signin Page](https://okneeraj.github.io/netflix-gpt/screenshot/02-Signin.png)
+```bash
+  # TMDB API
+  REACT_APP_API_KEY=  # Create account in TMDB API and add TMDB API KEY here
 
-- Signup Page
+  #FIREBASE
+  REACT_APP_FIREBASE_API_KEY=
+  REACT_APP_FIREBASE_AUTHDOMAIN=
+  REACT_APP_FIREBASE_DATABASEURL=
+  REACT_APP_FIREBASE_PROJECTID=
+  REACT_APP_FIREBASE_STORAGEBUCKET=
+  REACT_APP_FIREBASE_MESSAGINGSENDERID=
+  REACT_APP_FIREBASE_APPID=
+  REACT_APP_FIREBASE_MEASUREMENTID=
 
-  ![Signup Page](https://okneeraj.github.io/netflix-gpt/screenshot/03-Signup.png)
+  GENERATE_SOURCEMAP=false
+```
 
-- Browse Page
+Start the server
 
-  ![Browse Page](https://okneeraj.github.io/netflix-gpt/screenshot/04-Browse.png)
+```bash
+  npm run start
+```
 
-- Movie List
 
-  ![Movie List](https://okneeraj.github.io/netflix-gpt/screenshot/05-Movie-List.png)
 
-- Shimmer Loading
 
-  ![Shimmer Loading](https://okneeraj.github.io/netflix-gpt/screenshot/06-Shimmer-loading.png)
-
-- Search Page
-
-  ![Search Page](https://okneeraj.github.io/netflix-gpt/screenshot/07-Search.png)
-
-- Watch Now Page
-
-  ![Watch Now Page](https://okneeraj.github.io/netflix-gpt/screenshot/08-Watch.png)
-
+  
+  
