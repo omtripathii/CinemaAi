@@ -40,7 +40,7 @@ CinemaAi clone with Netflix like UI and functionalities built using React.js and
 Clone the project
 
 ```bash
-  git clone https://github.com/Vivekiiitbbsr/StreamFlix
+  git clone https://github.com/omtripathii/CinemaAi.git
 ```
 
 Go to the project directory
